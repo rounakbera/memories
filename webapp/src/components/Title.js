@@ -7,7 +7,7 @@ const TitleWrapper = styled.div`
 	display: flex;
     align-items: center;
 	justify-content:center;
-
+	margin-left: -20px;
 `
 
 const TitleImage = styled.img`
@@ -39,6 +39,15 @@ const Chevron =styled.span`
 	width: 0.45em;
 	left: 0;
 	transform: rotate(45deg);
+	animation: expand 1s ease-in infinite alternate;
+    @keyframes expand {
+        0% {
+            transform: scale(1.0) rotate(45deg);
+        }
+        100% {
+            transform: scale(1.2) rotate(45deg);
+        }
+    }
 `
 
 export default function Title(props){
