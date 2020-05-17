@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import styled from 'styled-components';
+import Title from './components/Title.js';
+import Images from './components/Images.js';
+import Words from './components/Words.js';
 import './App.css';
+
+const AppWrapper = styled.div`
+	width: 300vw;
+	height: 100vh;
+	background-color: #00071A;
+	display: flex;
+	overflow-y: hidden;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+	<>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+		</style>
+    	<AppWrapper>
+    		<Title/>
+			<Images/>
+			<Words/>
+		</AppWrapper>
+	</>
   );
 }
 
