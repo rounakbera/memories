@@ -3,9 +3,9 @@ p{
 }
 
 body{
-	overflow-y: hidden;
+	overflow: hidden;
 }
 
 #root{
-	overflow-y: hidden;
+	overflow: hidden;
 }
