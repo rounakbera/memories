@@ -6,7 +6,7 @@ import Words from './components/Words.js';
 import './App.css';
 
 const AppWrapper = styled.div`
-	width: 300vw;
+	width: calc(300vmax + 1500px);
 	height: 100vh;
 	background-color: #00071A;
 	display: flex;

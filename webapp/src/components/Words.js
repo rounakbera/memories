@@ -5,17 +5,14 @@ const Text = styled.div`
 	font-family:'Open Sans';
 	font-size:'1.5rem';
 	color: #B9D9EB;
-	@media only screen and (max-width: 600px) {
-		font-size: 2.5rem;
-	}
 `
 
 const Wrapper = styled.div`
 	display: flex;
 	align-items: center;	
-	width: 34vw;
-	padding: 3vw;
-	margin: 5vw;
+	width: 34vmax;
+	padding: 3vmax;
+	margin: 5vmax;
 `
 
 const From = styled.div`

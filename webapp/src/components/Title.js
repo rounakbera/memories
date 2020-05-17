@@ -3,35 +3,53 @@ import styled from 'styled-components'
 import Thowonk from '../thowonk.png'
 
 const TitleWrapper = styled.div`
-	width: 50vw;
+	width: 50vmax;
 	display: flex;
     align-items: center;
 	justify-content:center;
+
 `
 
 const TitleImage = styled.img`
-	width: 10vw;
-	height: 10vw;
-	margin: 1vw;
+	width: 10vmax;
+	height: 10vmax;
+	margin: 1vmax;
 `
 
 const TitleText = styled.div`
-	width: 25vw;
-	margin: 1vw;
+	width: 25vmax;
+	margin: 1vmax;
 	font-size: 3rem;
 	font-family: 'Arvo';
 	color: #B9D9EB;
-	@media only screen and (max-width: 600px) {
-		font-size: 4rem;
-	}	
+`
+
+const Chevron =styled.span`
+	border-color: #B9D9EB;
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+	left: 0;
+	transform: rotate(45deg);
 `
 
 export default function Title(props){
 	return (
+		<>
 		<TitleWrapper>
 			<TitleImage src={Thowonk}/>
 			<TitleText>Class of <strong>2020</strong></TitleText>
+			<Chevron/>
 		</TitleWrapper>
+		</>
 )
 }
 

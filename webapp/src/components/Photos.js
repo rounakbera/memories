@@ -8,7 +8,17 @@ function importAll(r) {
 
 const pics = importAll(require.context('../assets', false, /\.(png|jpe?g|svg)$/))
 
-export const Photos = [
+function shuffle(k) {
+	for(let i = (k.length - 1); i > 0; i--){
+		const j = Math.floor(Math.random() * i)
+		const temp = k[i]
+		k[i] = k[j]
+		k[j] = temp
+	  }
+	return k;
+}
+
+export const Photos = shuffle([
 	{
 		src: pics['1_34.jpg'],
 		width: 3,
@@ -88,5 +98,110 @@ export const Photos = [
 		src: pics['16_34.jpg'],
 		width: 3,
 		height: 4
+	},
+	{
+		src: pics['17_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['18_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['19_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['20_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['21_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['22_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['23_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['24_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['25_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['26_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['27_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['28_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['29_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['30_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['31_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['32_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['33_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['34_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['35_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['36_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['37_34.jpg'],
+		width: 3,
+		height: 4
 	}
-]
+])

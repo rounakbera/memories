@@ -2,3 +2,10 @@ p{
 	text-indent: 30px;
 }
 
+body{
+	overflow-y: hidden;
+}
+
+#root{
+	overflow-y: hidden;
+}
