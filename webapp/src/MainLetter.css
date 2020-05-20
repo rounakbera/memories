@@ -1,18 +1,45 @@
 .letter-enter {
-    opacity: .85;
-    transform: scale(0.9);
+    opacity: 0;
   }
+
+
   .letter-enter-active {
     opacity: 1;
-    transform: translateX(0);
-    transition: opacity 2000ms, transform 2000ms;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2500ms;
+	
+    @keyframes fadeInOpacity {
+        0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+        }
+    }
   }
+
+
   .letter-exit {
     opacity: 1;
   }
+
+
   .letter-exit-active {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 2000ms, transform 2000ms;
+    opacity: 1;
+	animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2500ms;
+	
+    @keyframes fadeOutOpacity {
+        0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+        }
+    }
   }
   

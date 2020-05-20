@@ -20,11 +20,12 @@ const Text = styled.div`
 	}
 `
 
-const Wrapper = styled.div`
+const TextWrapper = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content:center;
 	width: 150vw;
+	opacity:.85;
 	@media only screen and (max-width: 600px) {
 		width:100vw;
 		height:100vh;
@@ -54,32 +55,33 @@ export default class Words extends Component{
 	render(){
 		return(
 			<>
-			<Wrapper>
-				<div className="wrapper-fade">
-			      <CSSTransition
-					in={this.state.isInView}
-					timeout={2000}
-					classNames="letter"
-				>
-				<Text className="letter" inView={this.state.isInView}>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum, nunc eu tincidunt suscipit, est odio rhoncus magna, id accumsan arcu leo eu tortor. Donec non ex vel odio convallis finibus eget id velit. Donec faucibus risus sit amet nisi tincidunt, non lobortis tellus mollis. Nam ut felis ac ante egestas egestas. Duis et enim vel quam placerat consequat. Donec bibendum feugiat dictum. Donec et sem libero. Integer a ipsum nibh. Aliquam placerat purus nulla, ac efficitur risus eleifend non. Praesent ac condimentum tellus. Quisque cursus lectus vel ultricies pharetra. Cras at justo porttitor, malesuada tellus eget, tincidunt nunc. Aenean vel egestas urna. Proin ut dolor ac magna porta mollis.
-					</p>
-					<From>
-						Rounak, Matt
-					</From>
-				</Text>
-				</CSSTransition>
-				</div>
-			</Wrapper>
+			<CSSTransition
+			in={this.state.isInView}
+			timeout={2500}
+			classNames="letter"
+			> 
+				<TextWrapper>
+					<Text inView={this.state.isInView}>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum, nunc eu tincidunt suscipit, est odio rhoncus magna, id accumsan arcu leo eu tortor. Donec non ex vel odio convallis finibus eget id velit. Donec faucibus risus sit amet nisi tincidunt, non lobortis tellus mollis. Nam ut felis ac ante egestas egestas. Duis et enim vel quam placerat consequat. Donec bibendum feugiat dictum. Donec et sem libero. Integer a ipsum nibh. Aliquam placerat purus nulla, ac efficitur risus eleifend non. Praesent ac condimentum tellus. Quisque cursus lectus vel ultricies pharetra. Cras at justo porttitor, malesuada tellus eget, tincidunt nunc. Aenean vel egestas urna. Proin ut dolor ac magna porta mollis.
+						</p>
+						<From>
+							Rounak, Matt
+						</From>
+					</Text>
+				</TextWrapper>
+					
+			</CSSTransition> 
+				
 			<VizSensor
-					onChange={(isVisible) => {
-					this.setState({isInView: isVisible})
-					}}
-				>
-					<Decider/>
-				</VizSensor>
+				onChange={(isVisible) => {
+				this.setState({isInView: isVisible})
+				}}
+			>
+				<Decider/>
+			</VizSensor>
 			</>
 		);
 	}
 }
+
