@@ -11,7 +11,22 @@ const AppWrapper = styled.div`
 	background-color: #00071A;
 	display: flex;
 	overflow-y: hidden;
-` 
+`
+
+const VisionWrapper = styled.div`
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(to right, black,transparent,transparent,transparent,transparent,transparent, black);	
+	position:fixed;
+	z-index:999;
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	@media only screen and (max-width: 600px) {
+		visibility: hidden;		
+	}
+`
 
 class App extends Component {
 	constructor(props){
@@ -37,6 +52,7 @@ class App extends Component {
 					@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
 				</style>
 				<AppWrapper>
+					<VisionWrapper/>
 					<Title/>
 					<Images/>
 					<Words/>
@@ -45,5 +61,8 @@ class App extends Component {
 		)
 	}
 }
+
+
+
 
 export default App;

@@ -1,0 +1,18 @@
+.letter-enter {
+    opacity: .85;
+    transform: scale(0.9);
+  }
+  .letter-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 2000ms, transform 2000ms;
+  }
+  .letter-exit {
+    opacity: 1;
+  }
+  .letter-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 2000ms, transform 2000ms;
+  }
+  
