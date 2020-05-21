@@ -63,10 +63,10 @@ export default class Words extends Component{
 				<TextWrapper>
 					<Text inView={this.state.isInView}>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum, nunc eu tincidunt suscipit, est odio rhoncus magna, id accumsan arcu leo eu tortor. Donec non ex vel odio convallis finibus eget id velit. Donec faucibus risus sit amet nisi tincidunt, non lobortis tellus mollis. Nam ut felis ac ante egestas egestas. Duis et enim vel quam placerat consequat. Donec bibendum feugiat dictum. Donec et sem libero. Integer a ipsum nibh. Aliquam placerat purus nulla, ac efficitur risus eleifend non. Praesent ac condimentum tellus. Quisque cursus lectus vel ultricies pharetra. Cras at justo porttitor, malesuada tellus eget, tincidunt nunc. Aenean vel egestas urna. Proin ut dolor ac magna porta mollis.
-						</p>
+              Congrats on graduating y'all!
+            </p>
 						<From>
-							Rounak, Matt
+							the juniors of <strong>thöWönk</strong>
 						</From>
 					</Text>
 				</TextWrapper>
