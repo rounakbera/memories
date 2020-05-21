@@ -10,7 +10,7 @@ const TitleWrapper = styled.div`
 	align-items: center;
 	overflow-y:hidden;
 	justify-content:center;
-	padding-left: 18vw;
+	padding-left: 14vw;
 	padding-right: 14vw;
 
 

@@ -57,10 +57,17 @@ export default class Words extends Component{
 			<>
 			<CSSTransition
 			in={this.state.isInView}
-			timeout={2500}
+			timeout={1000}
 			classNames="letter"
 			> 
 				<TextWrapper>
+				<VizSensor
+				onChange={(isVisible) => {
+				this.setState({isInView: isVisible})
+				}}
+			>
+				<Decider/>
+			</VizSensor>
 					<Text inView={this.state.isInView}>
 						<p>
               				Congrats on graduating y'all!
@@ -72,14 +79,7 @@ export default class Words extends Component{
 				</TextWrapper>
 					
 			</CSSTransition> 
-				
-			<VizSensor
-				onChange={(isVisible) => {
-				this.setState({isInView: isVisible})
-				}}
-			>
-				<Decider/>
-			</VizSensor>
+			
 			</>
 		);
 	}
