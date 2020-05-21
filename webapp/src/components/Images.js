@@ -4,7 +4,7 @@ import Gallery from "react-photo-gallery";
 import {Photos} from "./Photos.js";
 
 const Wrapper = styled.div`
-	width: calc(200vmax + 1500px);
+	width: calc(200vmax + 2000px);
 	height: 100%;
 	overflow-y:hidden;
 	display: flex;

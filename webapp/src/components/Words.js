@@ -63,8 +63,8 @@ export default class Words extends Component{
 				<TextWrapper>
 					<Text inView={this.state.isInView}>
 						<p>
-              Congrats on graduating y'all!
-            </p>
+              				Congrats on graduating y'all!
+            			</p>
 						<From>
 							the juniors of <strong>thöWönk</strong>
 						</From>

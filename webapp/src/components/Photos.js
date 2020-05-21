@@ -203,5 +203,85 @@ export const Photos = shuffle([
 		src: pics['37_34.jpg'],
 		width: 3,
 		height: 4
+	},
+	{
+		src: pics['38_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['39_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['40_23.jpg'],
+		width: 2,
+		height: 3
+	},
+	{
+		src: pics['41_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['42_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['43_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['44_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['45_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['46_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['47_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['48_34.jpg'],
+		width: 3,
+		height: 4
+	},
+	{
+		src: pics['49_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['50_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['51_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['52_43.jpg'],
+		width: 4,
+		height: 3
+	},
+	{
+		src: pics['53_43.jpg'],
+		width: 4,
+		height: 3
 	}
 ])
