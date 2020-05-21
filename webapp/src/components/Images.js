@@ -6,8 +6,10 @@ import {Photos} from "./Photos.js";
 const Wrapper = styled.div`
 	width: calc(200vmax + 1500px);
 	height: 100%;
+	overflow-y:hidden;
 	display: flex;
 	align-items: center;
+	padding-right:2vw;
 `
 
 

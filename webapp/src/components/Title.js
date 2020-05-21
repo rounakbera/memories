@@ -1,19 +1,54 @@
 import React from 'react'
 import styled from 'styled-components'
 import Thowonk from '../thowonk.png'
+import TrackVisibility from 'react-on-screen';
+
 
 const TitleWrapper = styled.div`
-	width: 50vmax;
+	width: 100vw;
 	display: flex;
-    align-items: center;
+	align-items: center;
+	overflow-y:hidden;
 	justify-content:center;
-	margin-left: -20px;
+	padding-left: 18vw;
+	padding-right: 14vw;
+
+
+	@media only screen and (max-width: 600px) {
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+		width:100vw;
+		padding-right:1vw;
+		padding-left:1vw;
+	}
+
+	opacity: .85;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2.5s;
+	
+    @keyframes fadeInOpacity {
+        0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: .85;
+		}
 `
 
 const TitleImage = styled.img`
 	width: 10vmax;
 	height: 10vmax;
 	margin: 1vmax;
+	@media only screen and (max-width: 600px) {
+		width: 15vmax;
+		height: 15vmax;
+		margin-right:-3vw;
+	}
+
 `
 
 const TitleText = styled.div`
@@ -22,6 +57,11 @@ const TitleText = styled.div`
 	font-size: 3rem;
 	font-family: 'Arvo';
 	color: #B9D9EB;
+
+	@media only screen and (max-width: 600px) {
+		width:30vw;
+		text-align:center;
+	}
 `
 
 const Chevron =styled.span`
@@ -50,12 +90,13 @@ const Chevron =styled.span`
     }
 `
 
+
 export default function Title(props){
 	return (
 		<>
 		<TitleWrapper>
-			<TitleImage src={Thowonk}/>
-			<TitleText>Class of <strong>2020</strong></TitleText>
+			<TitleImage className="title-image" src={Thowonk}/>
+			<TitleText className="title-text">Class of <strong>2020</strong></TitleText>
 			<Chevron/>
 		</TitleWrapper>
 		</>
