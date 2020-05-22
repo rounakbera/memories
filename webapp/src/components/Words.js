@@ -48,8 +48,13 @@ export default class Words extends Component{
 	constructor(props) {
 		super(props);
 		this.state = {
-			isInView:false
+			isInView:false,
+			hasNotFired:true
 		}
+	}
+
+	updateBehavior = (isVisible) =>{
+		this.setState({isInView:isVisible});
 	}
 	
 	render(){
@@ -57,8 +62,9 @@ export default class Words extends Component{
 			<>
 			<CSSTransition
 			in={this.state.isInView}
-			timeout={2500}
+			timeout={1500}
 			classNames="letter"
+			onEnter={() => this.setState({hasNotFired:false})}
 			> 
 				<TextWrapper>
 					<Text inView={this.state.isInView}>
@@ -74,9 +80,8 @@ export default class Words extends Component{
 			</CSSTransition> 
 				
 			<VizSensor
-				onChange={(isVisible) => {
-				this.setState({isInView: isVisible})
-				}}
+				active={this.state.hasNotFired}
+				onChange={(isVisible) => this.updateBehavior(isVisible)}
 			>
 				<Decider/>
 			</VizSensor>
