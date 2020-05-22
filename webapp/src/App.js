@@ -6,7 +6,7 @@ import Words from './components/Words.js';
 import './App.css';
 
 const AppWrapper = styled.div`
-	width: calc(340vmax + 1800px);
+	width: calc(505vmax + 1800px);
 	height: 100vh;
 	background-color: #00071A;
 	display: flex;
@@ -16,7 +16,7 @@ const AppWrapper = styled.div`
 const VisionWrapper = styled.div`
 	width: 100vw;
 	height: 100vh;
-	background-image: linear-gradient(to right, black,transparent,transparent,transparent,transparent,transparent, black);	
+	background-image: linear-gradient(to right, black,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent, black);	
 	position:fixed;
 	z-index:999;
 	top:0;
@@ -55,6 +55,7 @@ class App extends Component {
 					<VisionWrapper/>
 					<Title/>
 					<Images/>
+					<Words/>
 					<Words/>
 				</AppWrapper>
 			</div>
