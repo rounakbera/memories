@@ -6,7 +6,7 @@ import Words from './components/Words.js';
 import './App.css';
 
 const AppWrapper = styled.div`
-	width: calc(300vmax + 1500px);
+	width: calc(340vmax + 1800px);
 	height: 100vh;
 	background-color: #00071A;
 	display: flex;
@@ -40,7 +40,7 @@ class App extends Component {
 		var containerScrollPosition = document.getElementById('container').scrollLeft
 		container.scrollTo({
 			top: 0,
-			left: containerScrollPosition + e.deltaY,
+			left: containerScrollPosition + e.deltaY + e.deltaX,
 			behaviour: 'smooth' //if you want smooth scrolling
 		})
 	}

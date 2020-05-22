@@ -5,11 +5,10 @@
 
   .letter-enter-active {
     opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 1500ms;
-    
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
     @keyframes fadeInOpacity {
         0% {
 			opacity: 0;
@@ -23,22 +22,4 @@
 
   .letter-exit {
     opacity: 1;
-  }
-
-
-  .letter-exit-active {
-    opacity: 1;
-    animation-name: fadeOutOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 1500ms;
-    
-    @keyframes fadeOutOpacity {
-        0% {
-			opacity: 1;
-		}
-		100% {
-			opacity: 0;
-        }
-    }
   }

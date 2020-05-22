@@ -62,15 +62,24 @@ export default class Words extends Component{
 			<>
 			<CSSTransition
 			in={this.state.isInView}
-			timeout={1500}
+
+			timeout={1000}
+
 			classNames="letter"
 			onEnter={() => this.setState({hasNotFired:false})}
 			> 
 				<TextWrapper>
+				<VizSensor
+				onChange={(isVisible) => {
+				this.setState({isInView: isVisible})
+				}}
+			>
+				<Decider/>
+			</VizSensor>
 					<Text inView={this.state.isInView}>
 						<p>
-              Congrats on graduating y'all!
-            </p>
+              				Congrats on graduating y'all!
+            			</p>
 						<From>
 							the juniors of <strong>thöWönk</strong>
 						</From>
