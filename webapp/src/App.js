@@ -47,7 +47,7 @@ class App extends Component {
 
 	render(){
 		return (
-			<div id='container' onWheel={this.hScroll} style={{width: '100vw',height: '100vh',overflow:'scroll'}}>
+			<div id='container' onWheel={this.hScroll} style={{width: "auto", height: '100vh',overflow:'scroll'}}>
 				<style>
 					@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
 				</style>
