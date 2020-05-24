@@ -32,7 +32,7 @@ const VisionWrapper = styled.div`
 class App extends Component {
 	constructor(props){
 		super(props)
-		this.state = { width: 0, height: 0 }
+		this.state = { width: window.innerWidth, height: window.innerHeight }
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
 		this.hScroll.bind(this)
 	}
@@ -64,6 +64,8 @@ class App extends Component {
 	}
 
 	render(){
+		// const LetterHeight = this.state.width > 600 ? <style>.react-tabs__tab-panel--selected {display: block; height: 50vh; overflow: scroll;
+		//   }</style>
 		return (
 			<div id='container' onWheel={this.hScroll} style={{width: "auto", height: '100vh',overflow:'scroll'}}>
 				<style>
@@ -72,8 +74,8 @@ class App extends Component {
 				<AppWrapper>
 					<VisionWrapper/>
 					<Title/>
-					<Images/>
-					<Words/>
+					<Images numHeight={this.state.height} numWidth={this.state.width}/>
+					<Words numWidth={this.state.width}/>
 				</AppWrapper>
 			</div>
 		)

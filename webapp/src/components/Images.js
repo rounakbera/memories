@@ -17,25 +17,16 @@ const Wrapper = styled.div`
 export default class Images extends Component{
 	constructor(props) {
 		super(props);
-		this.state = { width: 0, height: 0 };
-		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-	  }
-	  
-	  componentDidMount() {
-		this.updateWindowDimensions();
-		window.addEventListener('resize', this.updateWindowDimensions);
-	  }
-	  
-	  componentWillUnmount() {
-		window.removeEventListener('resize', this.updateWindowDimensions);
-	  }
-	  
-	  updateWindowDimensions() {
-		this.setState({ width: window.innerWidth, height: window.innerHeight });
-	  }
+	}
 
 	render(){
-		return <Wrapper><Gallery targetRowHeight={this.state.height > this.state.width ? this.state.height/4.2: this.state.height/3.5} photos={Photos}/></Wrapper>
+		const h = this.props.numHeight;
+		const w = this.props.numWidth;
+		return(
+			<Wrapper>
+				<Gallery targetRowHeight={h > w ? h/4.2 : h/3.5} photos={Photos}/>
+			</Wrapper>
+		)
 	}
 }
 

@@ -9,7 +9,8 @@ const From = styled.div`
     margin-right: 10px;
 `
 
-export default function Letters(){
+export default function Letters(props){
+    const LetterStyle = props.numWidth > 600 ? {height: "70vh"} : {height: "50vh"}
     return(
         <Tabs>
         <TabList>
@@ -19,7 +20,7 @@ export default function Letters(){
           <Tab>Serena</Tab>
         </TabList>
     
-        <TabPanel>
+        <TabPanel style={LetterStyle}>
             I don’t think I can fit everything I want to say to y’all in this short letter, but I do know that becoming friends with you guys was the best decision I made at Columbia, maybe ever to be honest. When I joined Spectator in my second semester, I pretty much had only four or five other friends on campus, three of whom were my suitemates. Honestly, that number hasn’t gone up a ton since then, but getting to know every one of you has more than made up for it.
             <br/>
             <br/>
@@ -36,7 +37,7 @@ export default function Letters(){
                 Rounak
             </From>
         </TabPanel>
-        <TabPanel>
+        <TabPanel style={LetterStyle}>
             I'm taking this opportunity to thank you all. Our current distance makes the job easier for me; emotional displays are not my strong suit.
             <br/>
             <br/>
@@ -56,7 +57,7 @@ export default function Letters(){
                 Raymond
             </From>
         </TabPanel>
-        <TabPanel>
+        <TabPanel style={LetterStyle}>
             So bear with me - as all you know I'm not really good with words either. I have spent days creating and reformulating all of the different ways to convey my appreciation that I have for yall, only to come to the conclusion that this problem has a null solution set. There exist no words in English (or any language for that matter ) that could ever accurately describe how I feel about yall. This is especially true considering I have the literary skills of a third grader - but if you know me, you know that this isn't anything new .
             <br/>
             <br/>
@@ -71,7 +72,7 @@ export default function Letters(){
                 Matt
             </From>
         </TabPanel>
-        <TabPanel>
+        <TabPanel style={LetterStyle}>
             To the seniors,
             <br/>
             <br/>

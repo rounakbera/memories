@@ -113,7 +113,7 @@ export default class Words extends Component{
 							the juniors of <strong>thöWönk</strong>
 						</From>
 						<LetterWrapper>
-							<Letters/>
+							<Letters numWidth={this.props.numWidth}/>
 						</LetterWrapper>
 					</Text>
 				</TextWrapper>
