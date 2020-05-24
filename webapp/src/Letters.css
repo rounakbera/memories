@@ -23,7 +23,7 @@
   .react-tabs__tab--selected {
     background: #fff;
     /* border-color: #aaa; */
-    color: black;
+    color: #00071A;
     border-radius: 5px;
   }
   
@@ -38,7 +38,7 @@
     outline: none;
   }
   
-  .react-tabs__tab:focus:after {
+  /* .react-tabs__tab:focus:after {
     content: "";
     position: absolute;
     height: 5px;
@@ -46,7 +46,7 @@
     right: -4px;
     bottom: -5px;
     background: #fff;
-  }
+  } */
   
   .react-tabs__tab-panel {
     display: none;

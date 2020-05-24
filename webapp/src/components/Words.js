@@ -37,6 +37,7 @@ const TextWrapper = styled.div`
 `
 
 const Letter = styled.div`
+	color: #FCC849;
 	width: 30vw;
 	margin-left: 20vw;
 	text-indent: 2rem;
@@ -49,6 +50,7 @@ const Letter = styled.div`
 	}
 `
 const From = styled.div`
+	color: #f28e0a;
 	width: 30vw;
 	margin-left: 20vw;
 	text-align:right;
@@ -110,7 +112,7 @@ export default class Words extends Component{
               				Congrats on graduating y'all! Each of us wrote a letter to you guys; find 'em linked below.
             			</Letter>
 						<From>
-							the juniors of <strong>thöWönk</strong>
+							the juniors of <strong>thOwOnk</strong>
 						</From>
 						<LetterWrapper>
 							<Letters numWidth={this.props.numWidth}/>

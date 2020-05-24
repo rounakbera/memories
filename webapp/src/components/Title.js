@@ -25,7 +25,7 @@ const TitleWrapper = styled.div`
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 5.5s;
+	animation-duration: 4s;
 	
     @keyframes fadeInOpacity {
         0% {
