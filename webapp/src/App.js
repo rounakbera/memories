@@ -60,7 +60,7 @@ class App extends Component {
 		}
 		container.scrollTo({
 			top: 0,
-			left: containerScrollPosition + e.deltaY + e.deltaX,
+			left: containerScrollPosition + e.deltaY,
 			behaviour: 'smooth'
 		})
 	}
