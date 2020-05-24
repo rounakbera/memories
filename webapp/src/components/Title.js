@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Thowonk from '../thowonk.png'
-import TrackVisibility from 'react-on-screen';
 
 
 const TitleWrapper = styled.div`
@@ -26,7 +25,7 @@ const TitleWrapper = styled.div`
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 2.5s;
+	animation-duration: 5.5s;
 	
     @keyframes fadeInOpacity {
         0% {

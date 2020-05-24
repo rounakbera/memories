@@ -55,5 +55,6 @@
   .react-tabs__tab-panel--selected {
     display: block;
     overflow: scroll;
+    padding: 10px;
   }
   

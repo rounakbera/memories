@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Title from './components/Title.js';
 import Images from './components/Images.js';
 import Words from './components/Words.js';
+import {Photos} from './components/Photos.js';
 import './App.css';
 
 const AppWrapper = styled.div`
@@ -38,6 +39,7 @@ class App extends Component {
 	}
 
 	componentDidMount() {
+		require.context('./assets', false, /\.(png|jpe?g|svg)$/)
 		this.updateWindowDimensions();
 		window.addEventListener('resize', this.updateWindowDimensions);
 	}
@@ -74,7 +76,7 @@ class App extends Component {
 				<AppWrapper>
 					<VisionWrapper/>
 					<Title/>
-					<Images numHeight={this.state.height} numWidth={this.state.width}/>
+					<Images numHeight={this.state.height} numWidth={this.state.width} photos={Photos}/>
 					<Words numWidth={this.state.width}/>
 				</AppWrapper>
 			</div>
