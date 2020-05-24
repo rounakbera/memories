@@ -10,7 +10,7 @@ const From = styled.div`
 `
 
 export default function Letters(props){
-    const LetterStyle = props.numWidth > 600 ? {height: "70vh"} : {height: "50vh"}
+    const LetterStyle = props.numWidth > 600 ? {height: "65vh"} : props.numWidth > 350 ? {height: "50vh"} : {height: "40vh"}
     return(
         <Tabs>
         <TabList>

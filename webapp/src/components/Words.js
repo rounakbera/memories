@@ -8,13 +8,13 @@ import Letters from './Letters.js';
 import '../MainLetter.css'
 
 const Text = styled.div`
-	margin: 10vh 15vw;
+	margin: 5vh 15vw;
 	font-family:'Open Sans';
 	font-size:'1.5rem';
 	color: #B9D9EB;
 	text-align: center;
 	width: 70vw;
-	height: 80vh;
+	height: 90vh;
 	opacity: ${props => props.inView ? "1": "0"};
 	@media only screen and (max-width: 600px) {
 		height:75vh;
@@ -40,10 +40,9 @@ const Letter = styled.div`
 	color: #FCC849;
 	width: 30vw;
 	margin-left: 20vw;
-	text-indent: 2rem;
 	text-align: left;
 	font-weight: 700;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	@media only screen and (max-width: 600px) {
 		width: 100%;
 		margin-left: 0;
@@ -55,7 +54,7 @@ const From = styled.div`
 	margin-left: 20vw;
 	text-align:right;
 	font-family: 'Arvo';
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	@media only screen and (max-width: 600px) {
 		width: 100%;
 		margin-left: 0;
