@@ -34,10 +34,17 @@ const TextWrapper = styled.div`
 	}
 `
 
+const Letter = styled.div`
+	text-indent: 2rem;
+	width: 100%;
+	text-align: left;
+	font-weight: 700;
+	margin-bottom: 50px;
+`
 const From = styled.div`
 	width: 100%;
 	text-align:right;
-	font-weight: 700;
+	font-family: 'Arvo';
 `
 const Decider = styled.div`
 	height:100vh;
@@ -69,25 +76,23 @@ export default class Words extends Component{
 			onEnter={() => this.setState({hasNotFired:false})}
 			> 
 				<TextWrapper>
-				<VizSensor
-				onChange={(isVisible) => {
-				this.setState({isInView: isVisible})
-				}}
-			>
-				<Decider/>
-			</VizSensor>
+					<VizSensor
+					onChange={(isVisible) => {
+					this.setState({isInView: isVisible})
+					}}
+					>
+						<Decider/>
+					</VizSensor>
 					<Text inView={this.state.isInView}>
-						<p>
-              				Congrats on graduating y'all!
-            			</p>
+						<Letter>
+              				Congrats on graduating y'all! Each of us wrote a letter to you guys; find 'em linked below.
+            			</Letter>
 						<From>
 							the juniors of <strong>thöWönk</strong>
 						</From>
 					</Text>
 				</TextWrapper>
-					
 			</CSSTransition> 
-				
 			<VizSensor
 				active={this.state.hasNotFired}
 				onChange={(isVisible) => this.updateBehavior(isVisible)}
