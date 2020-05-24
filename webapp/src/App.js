@@ -6,7 +6,7 @@ import Words from './components/Words.js';
 import './App.css';
 
 const AppWrapper = styled.div`
-	width: calc(505vmax + 1800px);
+	width: calc(340vmax + 1800px);
 	height: 100vh;
 	background-color: #00071A;
 	display: flex;
@@ -55,7 +55,6 @@ class App extends Component {
 					<VisionWrapper/>
 					<Title/>
 					<Images/>
-					<Words/>
 					<Words/>
 				</AppWrapper>
 			</div>
