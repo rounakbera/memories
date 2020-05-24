@@ -10,8 +10,6 @@ const TitleWrapper = styled.div`
 	align-items: center;
 	overflow-y:hidden;
 	justify-content:center;
-	padding-left: 14vw;
-	padding-right: 14vw;
 
 
 	@media only screen and (max-width: 600px) {
