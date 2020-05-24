@@ -69,13 +69,12 @@ export default class Words extends Component{
 			<>
 			<CSSTransition
 			in={this.state.isInView}
-
-			timeout={1000}
-
+			timeout={1250}
 			classNames="letter"
 			onEnter={() => this.setState({hasNotFired:false})}
 			> 
 				<TextWrapper>
+<<<<<<< HEAD
 					<VizSensor
 					onChange={(isVisible) => {
 					this.setState({isInView: isVisible})
@@ -83,6 +82,8 @@ export default class Words extends Component{
 					>
 						<Decider/>
 					</VizSensor>
+=======
+>>>>>>> b366fc5640916585f28fee7668e573c2a132ffaa
 					<Text inView={this.state.isInView}>
 						<Letter>
               				Congrats on graduating y'all! Each of us wrote a letter to you guys; find 'em linked below.
@@ -91,14 +92,24 @@ export default class Words extends Component{
 							the juniors of <strong>thöWönk</strong>
 						</From>
 					</Text>
+					<VizSensor
+						active={this.state.hasNotFired}
+						onChange={(isVisible) => this.updateBehavior(isVisible)}
+					>
+						<Decider/>
+					</VizSensor>
 				</TextWrapper>
 			</CSSTransition> 
+<<<<<<< HEAD
 			<VizSensor
 				active={this.state.hasNotFired}
 				onChange={(isVisible) => this.updateBehavior(isVisible)}
 			>
 				<Decider/>
 			</VizSensor>
+=======
+				
+>>>>>>> b366fc5640916585f28fee7668e573c2a132ffaa
 			</>
 		);
 	}
