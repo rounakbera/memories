@@ -46,7 +46,6 @@ const TitleImage = styled.img`
 	@media only screen and (max-width: 600px) {
 		width: 15vmax;
 		height: 15vmax;
-		margin-right:-3vw;
 	}
 
 `
@@ -59,7 +58,7 @@ const TitleText = styled.div`
 	color: #B9D9EB;
 
 	@media only screen and (max-width: 600px) {
-		width:30vw;
+		width:70vw;
 		text-align:center;
 	}
 `

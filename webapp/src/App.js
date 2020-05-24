@@ -6,14 +6,15 @@ import Words from './components/Words.js';
 import './App.css';
 
 const AppWrapper = styled.div`
-	width: calc(340vmax + 1800px);
+	width: calc(200vw + 240vmax + 1800px);
 	height: 100vh;
 	background-color: #00071A;
 	display: flex;
-	overflow-y: hidden;
+	overflow: hidden;
 `
 
 const VisionWrapper = styled.div`
+	pointer-events: none;
 	width: 100vw;
 	height: 100vh;
 	background-image: linear-gradient(to right, black,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent, black);	
@@ -31,17 +32,34 @@ const VisionWrapper = styled.div`
 class App extends Component {
 	constructor(props){
 		super(props)
+		this.state = { width: 0, height: 0 }
+		this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
 		this.hScroll.bind(this)
 	}
 
+	componentDidMount() {
+		this.updateWindowDimensions();
+		window.addEventListener('resize', this.updateWindowDimensions);
+	}
+	
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.updateWindowDimensions);
+	}
+	
+	updateWindowDimensions() {
+		this.setState({ width: window.innerWidth, height: window.innerHeight });
+	}
+
 	hScroll = (e) => {
-		// e.preventDefault()
 		var container = document.getElementById('container')
 		var containerScrollPosition = document.getElementById('container').scrollLeft
+		if(this.state.width <= 600){
+			return;
+		}
 		container.scrollTo({
 			top: 0,
 			left: containerScrollPosition + e.deltaY + e.deltaX,
-			behaviour: 'smooth' //if you want smooth scrolling
+			behaviour: 'smooth'
 		})
 	}
 
