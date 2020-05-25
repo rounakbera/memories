@@ -90,6 +90,24 @@ export default function Letters(props){
                 Serena
             </From>
         </TabPanel>
+        <TabPanel style={LetterStyle}>
+            The first time I met most of you was at the Spec open house. I don't remember any of the presentation's content, but I still remember thinking, "wow, these people seem really nice." There was no better group of people I could have joined that semester. I was intimidated at first, but you didn't care that I was antisocial and lost: you treated me like part of the family, and that made me feel like I truly belonged for the first time in my college experience. Thank you for welcoming me with open arms. 
+            <br/>
+            <br/>
+            The memories I have of time spent with you are priceless: DJ sessions in NoCo, cooking crepes and scallion pancakes, almost-all-nighters in Hamilton, the best book club discussions I've ever been part of, restaurant outings all over the City, movie nights in Pupin. I was not a big risk-taker when I got to college, but spending time with you all helped me become less afraid of trying new things. I'm inspired by your positivity, curiosity and openness. Thank you for teaching me to enjoy life. 
+            <br/>
+            <br/>
+            Even when I didn't stay in touch as much as I should have after leaving Web Apps, you kept bringing me back into the group for more adventures and fun times. When it felt like my life was falling apart, you were just a message or NoCo visit away. Thank you for letting me be vulnerable and being there for me no matter the circumstances. 
+            <br/>
+            <br/>
+            I feel so lucky to have shared three years with you. You're the best people anyone could hope to meet in college: brilliant, generous, creative, kind, loving, and the perfect kind of quirky. You inspire me to be a better person. No matter where you're headed next, I'm grateful to have you in my life and can't wait to see you again! Congrats on graduating!
+            <From>
+                Love,
+            </From>
+            <From>
+                Lucie
+            </From>
+        </TabPanel>
       </Tabs>
     )
 }
