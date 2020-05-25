@@ -73,18 +73,16 @@ export default function Letters(props){
             </From>
         </TabPanel>
         <TabPanel style={LetterStyle}>
-            To the seniors,
+            People have always told me, “Have fun in college while you can!” To be honest, in the first half of my time at Columbia, I didn’t really know how to have fun, and this was in no small part because I didn’t really care about having fun. Most of you will remember my first year in Spec as someone who was overly caught up in my academic reputation and not (yet) the degenerate fool that I am now. It’s thanks to you guys and this group of friends that I learned how to have fun again—how to let go and enjoy myself without sacrificing the drive that unfortunately guided me to a whole lot of loneliness during my first two years.
             <br/>
             <br/>
-            People have always told me, “Have fun in college while you can!” To be honest, in the first half of my time at Columbia, I didn’t really know how to have fun, and this was in no small part because I didn’t really care about having fun. Most of you will remember my first year in Spec as someone who was overly caught up in grades and not (yet) the degenerate fool that I am now. It’s thanks to you guys and this group of friends that I learned how to have fun again—how to let go and enjoy myself without sacrificing the part of me that unfortunately guided me to a whole lot of loneliness during my first two years. Your friendship and acceptance dragged me out of a dark place in my life that was only getting darker. I don’t want to exaggerate the severity of what I was going through, but I will not sugarcoat it at the expense of undermining the significance of your part in my life. The constancy of your presence, the genuineness of your support, and the enthusiasm of your love I could never take for granted.
+            Your friendship and acceptance dragged me out of a dark place in my life that was only getting darker. I don’t want to exaggerate the severity of what I was going through, but I will not sugarcoat it at the expense of undermining the significance of your part in my life. The constancy of your presence, the genuineness of your support, and the enthusiasm of your love I could never take for granted.
             <br/>
             <br/>
             The memories we have made and, I hope, will continue to make are such bright spots in my vision that I begin to forget about the darker ones. When I received my Spec dinner award last semester for achieving the “Fastest Degeneration Over a Semester,” it meant more to me than was probably intended. To me, it reflected that in a semester, you all have helped me become such a happier person, given me an amazing group of friends, and taught me so much about being a good friend and person. Thank you for letting me be a part of your lives and a member of this family.
             <br/>
             <br/>
-            To those of you who will be in New York for another year, I am so so excited to be spending more time with you. To those who are moving on to join the wider world: stay safe, stay wacky, and stay in touch. I wish you the absolute best! Congratulations again for graduating from Columbia University in the greatest city in the world, with the greatest friends in the world.
-            <br/>
-            <br/>
+            To the seniors who will be in New York for another year, I am so so excited to be spending more time with you. To the seniors who are moving on to join the wider world: stay safe, stay wacky, and stay in touch. I wish you the absolute best! Congratulations again for graduating from Columbia University in the greatest city in the world, with the greatest friends in the world.
             <From>
                 Love,
             </From>
