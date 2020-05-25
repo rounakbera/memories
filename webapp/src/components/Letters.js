@@ -18,6 +18,7 @@ export default function Letters(props){
           <Tab>Raymond</Tab>
           <Tab>Matt</Tab>
           <Tab>Serena</Tab>
+          <Tab>Lucie</Tab>
         </TabList>
     
         <TabPanel style={LetterStyle}>
